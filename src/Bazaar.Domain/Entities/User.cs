@@ -5,7 +5,7 @@ using Bazaar.Domain.Enums;
 
 namespace Bazaar.Domain.Entities;
 
-public class User : BaseEntity
+public class ApplicationUser : BaseEntity
 {
     public string FullName { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
@@ -19,6 +19,10 @@ public class User : BaseEntity
     public ICollection<Order> Orders { get; set; } = new List<Order>();
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
     public Cart? Cart { get; set; }
+}
+
+public class User : ApplicationUser
+{
 }
 
 public class Address : BaseEntity
@@ -35,4 +39,3 @@ public class Address : BaseEntity
     public string? Landmark { get; set; }
     public bool IsDefault { get; set; }
 }
-

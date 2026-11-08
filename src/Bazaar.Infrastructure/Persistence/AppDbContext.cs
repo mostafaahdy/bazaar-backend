@@ -75,6 +75,7 @@ public class AppDbContext : DbContext, IAppDbContext
 
         modelBuilder.Entity<User>(b =>
         {
+            b.ToTable("Users");
             b.HasIndex(u => u.Email).IsUnique();
             b.HasOne(u => u.Cart)
                 .WithOne(c => c.User)

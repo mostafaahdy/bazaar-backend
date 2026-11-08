@@ -65,3 +65,4 @@ D:\taskk\backend\src\Bazaar.API\obj\Debug\net8.0\refint\Bazaar.API.dll
 D:\taskk\backend\src\Bazaar.API\obj\Debug\net8.0\Bazaar.API.pdb
 D:\taskk\backend\src\Bazaar.API\obj\Debug\net8.0\Bazaar.API.genruntimeconfig.cache
 D:\taskk\backend\src\Bazaar.API\obj\Debug\net8.0\ref\Bazaar.API.dll
+D:\taskk\backend\src\Bazaar.API\obj\Debug\net8.0\Bazaar.API.sourcelink.json

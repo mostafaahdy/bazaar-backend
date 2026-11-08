@@ -9,3 +9,4 @@ D:\taskk\backend\src\Bazaar.Domain\obj\Debug\net8.0\Bazaar.Domain.dll
 D:\taskk\backend\src\Bazaar.Domain\obj\Debug\net8.0\refint\Bazaar.Domain.dll
 D:\taskk\backend\src\Bazaar.Domain\obj\Debug\net8.0\Bazaar.Domain.pdb
 D:\taskk\backend\src\Bazaar.Domain\obj\Debug\net8.0\ref\Bazaar.Domain.dll
+D:\taskk\backend\src\Bazaar.Domain\obj\Debug\net8.0\Bazaar.Domain.sourcelink.json

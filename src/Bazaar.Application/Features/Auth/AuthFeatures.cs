@@ -22,7 +22,6 @@ public class RegisterCommandValidator : AbstractValidator<RegisterCommand>
         RuleFor(x => x.Request.FullName).NotEmpty().MinimumLength(3).MaximumLength(100);
         RuleFor(x => x.Request.Email).NotEmpty().EmailAddress();
         RuleFor(x => x.Request.Password).NotEmpty().MinimumLength(6);
-        RuleFor(x => x.Request.PhoneNumber).NotEmpty();
     }
 }
 
@@ -53,7 +52,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, AuthRespo
             FullName = req.FullName.Trim(),
             Email = email,
             PasswordHash = _hasher.HashPassword(req.Password),
-            PhoneNumber = req.PhoneNumber.Trim(),
+            PhoneNumber = req.PhoneNumber?.Trim() ?? string.Empty,
             Role = UserRole.Customer,
             AvatarUrl = $"https://api.dicebear.com/7.x/avataaars/svg?seed={Uri.EscapeDataString(email)}"
         };

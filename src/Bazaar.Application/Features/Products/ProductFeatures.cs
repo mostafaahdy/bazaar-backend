@@ -41,7 +41,15 @@ public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, PagedRe
         }
         else if (!string.IsNullOrWhiteSpace(f.CategorySlug))
         {
-            query = query.Where(p => p.Category.Slug == f.CategorySlug.ToLower());
+            var rawSlug = f.CategorySlug.ToLower().Trim();
+            var targetSlug = rawSlug switch
+            {
+                "home-living" => "home",
+                "baby-products" => "baby",
+                "supermarket" => "appliances", // or groceries
+                _ => rawSlug
+            };
+            query = query.Where(p => p.Category.Slug == rawSlug || p.Category.Slug == targetSlug);
         }
 
         // 2. Brand Filter

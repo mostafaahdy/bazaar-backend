@@ -608,5 +608,35 @@ public static class DatabaseSeeder
             await context.Products.AddRangeAsync(products);
             await context.SaveChangesAsync();
         }
+
+        // 3. Seed Demo Users if empty
+        if (!await context.Users.AnyAsync())
+        {
+            var demoUsers = new List<User>
+            {
+                new()
+                {
+                    Id = Guid.Parse("99999999-9999-9999-9999-999999999901"),
+                    FullName = "Ahmed Hassan",
+                    Email = "customer@bazaar.eg",
+                    PasswordHash = passwordHasher.HashPassword("Customer@123"),
+                    PhoneNumber = "01012345678",
+                    Role = UserRole.Customer,
+                    AvatarUrl = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&q=80"
+                },
+                new()
+                {
+                    Id = Guid.Parse("99999999-9999-9999-9999-999999999902"),
+                    FullName = "Bazaar Admin",
+                    Email = "admin@bazaar.eg",
+                    PasswordHash = passwordHasher.HashPassword("Admin@Bazaar2026"),
+                    PhoneNumber = "01187654321",
+                    Role = UserRole.Admin,
+                    AvatarUrl = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80"
+                }
+            };
+            await context.Users.AddRangeAsync(demoUsers);
+            await context.SaveChangesAsync();
+        }
     }
 }

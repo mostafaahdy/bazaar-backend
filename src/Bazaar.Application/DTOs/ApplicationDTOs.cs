@@ -5,7 +5,7 @@ using Bazaar.Domain.Enums;
 namespace Bazaar.Application.DTOs;
 
 // ── Auth DTOs ──────────────────────────────────────────────
-public record RegisterRequest(string FullName, string Email, string Password, string PhoneNumber);
+public record RegisterRequest(string FullName, string Email, string Password, string? PhoneNumber = null);
 public record LoginRequest(string Email, string Password);
 public record AuthResponse(string Token, string RefreshToken, UserProfileDto User);
 public record UserProfileDto(Guid Id, string FullName, string Email, string PhoneNumber, string Role, string? AvatarUrl);

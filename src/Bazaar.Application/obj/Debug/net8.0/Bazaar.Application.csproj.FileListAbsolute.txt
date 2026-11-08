@@ -13,3 +13,4 @@ D:\taskk\backend\src\Bazaar.Application\obj\Debug\net8.0\Bazaar.Application.dll
 D:\taskk\backend\src\Bazaar.Application\obj\Debug\net8.0\refint\Bazaar.Application.dll
 D:\taskk\backend\src\Bazaar.Application\obj\Debug\net8.0\Bazaar.Application.pdb
 D:\taskk\backend\src\Bazaar.Application\obj\Debug\net8.0\ref\Bazaar.Application.dll
+D:\taskk\backend\src\Bazaar.Application\obj\Debug\net8.0\Bazaar.Application.sourcelink.json

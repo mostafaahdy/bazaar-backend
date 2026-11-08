@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bazaar.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8b6f2a3fa306e804146c3754a3c47bd1d381c16")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae65ac61700a11664e42aa718ea18d0fa43144e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bazaar.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bazaar.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

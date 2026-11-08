@@ -15,3 +15,4 @@ D:\taskk\backend\src\Bazaar.Infrastructure\obj\Debug\net8.0\Bazaar.Infrastructur
 D:\taskk\backend\src\Bazaar.Infrastructure\obj\Debug\net8.0\refint\Bazaar.Infrastructure.dll
 D:\taskk\backend\src\Bazaar.Infrastructure\obj\Debug\net8.0\Bazaar.Infrastructure.pdb
 D:\taskk\backend\src\Bazaar.Infrastructure\obj\Debug\net8.0\ref\Bazaar.Infrastructure.dll
+D:\taskk\backend\src\Bazaar.Infrastructure\obj\Debug\net8.0\Bazaar.Infrastructure.sourcelink.json
